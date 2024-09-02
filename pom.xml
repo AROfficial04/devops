@@ -24,7 +24,7 @@
                 <configuration>
                     <webResources>
                         <resource>
-                            <directory>src/main/webapp</directory>
+                            <directory>${basedir}</directory>
                             <includes>
                                 <include>**/*</include>
                             </includes>
