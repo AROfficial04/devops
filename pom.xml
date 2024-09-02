@@ -20,13 +20,14 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.1.0</version> <!-- Update if needed -->
+                <version>3.1.0</version>
                 <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml> <!-- Ignore missing web.xml -->
                     <webResources>
                         <resource>
                             <directory>${basedir}</directory>
                             <includes>
-                                <include>**/*</include>
+                                <include>**/*</include> <!-- Include all files in the base directory -->
                             </includes>
                         </resource>
                     </webResources>
