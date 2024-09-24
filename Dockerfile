@@ -1,6 +1,2 @@
-FROM nginx:alpine
-
-COPY ./index.html /usr/share/nginx/html/index.html
-
-CMD ["nginx","-g", "daemon off;"]
-
+FROM httpd
+COPY . . /var/lib/apache2/htdocs/
